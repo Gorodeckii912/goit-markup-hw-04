@@ -70,6 +70,8 @@ img {
 .head {
   background-color: var(--head-back-color);
   border-bottom: 1px solid #ececec;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 header .container {
   display: flex;
@@ -160,6 +162,8 @@ header .container {
 
 .foot {
   background-color: var(--footer-back-color);
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .ulstyle2 {
@@ -211,13 +215,23 @@ header .container {
 }
 
 /* Майн веб-------------hero-------------- */
+.main {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 
 .WS0 {
   background: var(--main-HEroback-color);
-  background-image:linear-gradient( rgba(47, 48, 58, 0.2),rgba(47, 48, 58, 0.2)), url("../images2/hero.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.2),
+      rgba(47, 48, 58, 0.2)
+    ),
+    url("../images2/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .HERO {
@@ -349,13 +363,41 @@ header .container {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--P-Text-color);
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 .namesborder {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.barbers-soc {
+  margin:auto;
+  display: flex;
+  width: 206px;
+  height: 44px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.barbers-soc-items {
+  width: 44px;
+  height: 44px;
+}
+.barbers-soc-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.barbers-soc-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #2196f3;
+  border-radius: 50%;
 }
 
 /* SEction 4-------------------- */
