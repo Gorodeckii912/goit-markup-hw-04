@@ -69,15 +69,12 @@ img {
 
 .head {
   background-color: var(--head-back-color);
-  border-bottom: 1px solid #ECECEC;
-
+  border-bottom: 1px solid #ececec;
 }
 header .container {
   display: flex;
   align-items: center;
 }
-
-
 
 .logo {
   font-family: "Raleway";
@@ -132,7 +129,7 @@ header .container {
   height: 16px;
   left: 653px;
   top: 32px;
-  margin-right: 385px;
+  margin-right: 318px;
 }
 
 .mit {
@@ -213,10 +210,14 @@ header .container {
   padding-bottom: 60px;
 }
 
-/* Майн веб--------------------------- */
+/* Майн веб-------------hero-------------- */
 
 .WS0 {
   background: var(--main-HEroback-color);
+  background-image:linear-gradient( rgba(47, 48, 58, 0.2),rgba(47, 48, 58, 0.2)), url("../images2/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .HERO {
@@ -267,6 +268,7 @@ header .container {
   text-transform: uppercase;
   color: var(--H2-H3-Text-color);
   margin-bottom: 10px;
+  width: 270px;
 }
 
 .WW {
@@ -283,6 +285,7 @@ header .container {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--P-Text-color);
+  width: 270px;
 }
 
 /* section 2 -------------------------*/
@@ -299,7 +302,7 @@ header .container {
   letter-spacing: 0.03em;
   color: var(--H2-H3-Text-color);
   margin-bottom: 50px;
-  padding: 0 485px 0 485px;
+  padding: 0 400px 0 400px;
 }
 
 /* section 3------------------------------ */
@@ -320,7 +323,7 @@ header .container {
   letter-spacing: 0.03em;
   color: var(--H2-H3-Text-color);
   margin-bottom: 50px;
-  padding: 0 502px 0 502px;
+  padding: 0 450px 0 450px;
 }
 
 .imgworkers {
@@ -356,16 +359,23 @@ header .container {
 }
 
 /* SEction 4-------------------- */
-.WS4
-.WS4h2 {
-  font-family: 'Roboto';
-font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--H2-H3-Text-color);
-
+.WS4 .WS4h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--H2-H3-Text-color);
+}
+.ULclients {
+  justify-content: space-between;
+}
+.SVGclients {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 16px 32px;
 }
 
 /*Portfolio  ------------------------------------*/
