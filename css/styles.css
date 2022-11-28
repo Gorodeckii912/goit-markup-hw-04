@@ -137,7 +137,8 @@ header .container {
   margin-right: 318px;
 }
 
-.mit {text-decoration: none;
+.mit {
+  text-decoration: none;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
@@ -148,19 +149,32 @@ header .container {
 .mit:hover {
   color: var(--link-active-color);
 }
-.mailmargin {margin-right: 30px;
-  
+.mit:hover::before{ border-color: #2196F3;
+color:#2196F3 ;
+fill:#2196F3; }
+
+.mailmargin {
+  margin-right: 30px;
+}
+.mail::before {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url("../svg/envelope.svg");
+  background-size: contain;
+  color: #2196f3;
 }
 
-.tel::before { 
-  content:"";
-  display:inline-flex;
+.tel::before {
+  content: "";
+  display: inline-flex;
   width: 10px;
-   height: 16px;
-   margin-right: 10px;
-   background-image: url("../images/icons.svg#icon-smartphone");
-   background-size: contain;
-   
+  height: 16px;
+  margin-right: 10px;
+  background-image: url("../svg/smartphone.svg");
+  background-size: contain;
 }
 /* Ноги ----------------------*/
 
@@ -339,16 +353,21 @@ header .container {
   text-decoration: none;
 }
 
-.special-item { width: 270px;
-  height: 120px;background: #F5F4FA;
+.special-item {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
   border-radius: 4px;
-margin-bottom: 30px;}
+  margin-bottom: 30px;
+}
 
-.special-links { width: 100%;
+.special-links {
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;}
+  align-items: center;
+}
 
 .WS1h3 {
   font-family: "Roboto";
