@@ -24,6 +24,9 @@
   --portfolio-BattonBack-color: rgba(33, 150, 243, 1);
   --P-Text-color: #757575;
   --Main-Section3Back-color: #f5f4fa;
+
+  /* Icons------------- */
+  --icons: #afb1b8;
 }
 
 /* основные настрйки */
@@ -134,7 +137,7 @@ header .container {
   margin-right: 318px;
 }
 
-.mit {
+.mit {text-decoration: none;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
@@ -145,19 +148,20 @@ header .container {
 .mit:hover {
   color: var(--link-active-color);
 }
-.mailmargin {
-  margin-right: 40px;
+.mailmargin {margin-right: 30px;
+  
 }
 
-.line {
-  width: 1600px;
-  height: 0px;
-  left: 0px;
-  top: 80px;
-  position: absolute;
-  border: 1px solid #ececec;
+.tel::before { 
+  content:"";
+  display:inline-flex;
+  width: 10px;
+   height: 16px;
+   margin-right: 10px;
+   background-image: url("../images/icons.svg#icon-smartphone");
+   background-size: contain;
+   
 }
-
 /* Ноги ----------------------*/
 
 .foot {
@@ -182,6 +186,61 @@ header .container {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-secondfooter-color);
+}
+.conFlex {
+  display: flex;
+}
+
+.unaited {
+  width: 206px;
+  height: 80px;
+  padding: 72px;
+}
+.unaited-h3 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-soc {
+  margin: auto;
+  display: flex;
+  width: 206px;
+  height: 44px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-soc-items {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-soc-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-soc-link:hover {
+  background-color: var(--link-active-color);
+}
+
+.footer-soc-icon {
+  fill: #fff;
 }
 
 .Adress {
@@ -272,6 +331,24 @@ header .container {
 .WS1 {
   background-color: var(--main-Section1and2Back-color);
 }
+
+.specials {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+}
+
+.special-item { width: 270px;
+  height: 120px;background: #F5F4FA;
+  border-radius: 4px;
+margin-bottom: 30px;}
+
+.special-links { width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
 
 .WS1h3 {
   font-family: "Roboto";
@@ -369,21 +446,21 @@ header .container {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .barbers-soc {
-  margin:auto;
+  margin: auto;
   display: flex;
   width: 206px;
   height: 44px;
   list-style: none;
   justify-content: center;
   align-items: center;
-  
-  
 }
+
 .barbers-soc-items {
   width: 44px;
   height: 44px;
@@ -395,20 +472,33 @@ header .container {
 .barbers-soc-link {
   width: 100%;
   height: 100%;
-  display: block;
-  background-color: #2196f3;
+  display: flex;
+  background-color: #fff;
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
+.barbers-soc-link:hover {
+  background-color: var(--link-active-color);
+}
+.barbers-soc-link:hover .barbers-soc-icon {
+  background-color: var(--link-active-color);
+  fill: #fff;
+}
+.barbers-soc-icon {
+  fill: #afb1b8;
+}
 /* SEction 4-------------------- */
 .WS4 .WS4h2 {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--H2-H3-Text-color);
+  margin-bottom: 50px;
 }
 .ULclients {
   justify-content: space-between;
@@ -417,7 +507,27 @@ header .container {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   box-sizing: border-box;
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+}
+.SVGclients:hover {
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+
+.Clients {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.Clients-svg {
+  fill: #afb1b8;
+}
+.Clients:hover .Clients-svg {
+  fill: rgba(33, 150, 243, 1);
 }
 
 /*Portfolio  ------------------------------------*/
