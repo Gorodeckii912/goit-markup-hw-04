@@ -104,6 +104,7 @@ header .container {
   display: flex;
 }
 
+
 .TextNAV {
   font-family: "Roboto";
   font-weight: 500;
@@ -149,6 +150,7 @@ header .container {
 .mit:hover {
   color: var(--link-active-color);
 }
+/* Я НЕПОНИМАЮ ПОЧЕМУ ЭТО НЕ РАБОТАЕТ!!! */
 .mit:hover::before{ border-color: #2196F3;
 color:#2196F3 ;
 fill:#2196F3; }
