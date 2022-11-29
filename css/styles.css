@@ -104,7 +104,6 @@ header .container {
   display: flex;
 }
 
-
 .TextNAV {
   font-family: "Roboto";
   font-weight: 500;
@@ -113,7 +112,8 @@ header .container {
   letter-spacing: 0.02em;
   color: var(--head-nav-color);
 }
-.TextNAV:hover, .TextNAV:focus {
+.TextNAV:hover,
+.TextNAV:focus {
   color: var(--link-active-color);
 }
 .studioP {
@@ -147,18 +147,23 @@ header .container {
   letter-spacing: 0.02em;
   color: var(--head-mailtel-color);
 }
-.mit:hover, .mit:focus {
+.mit:hover,
+.mit:focus {
   color: var(--link-active-color);
 }
-.special-svg { fill:var(--head-mailtel-color); margin-right: 10px;cursor: pointer;}
-.special-svg:hover, .special-svg:focus {fill:var(--link-active-color) }
+.special-svg {
+  fill: currentColor;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.special-svg:hover,
+.special-svg:focus {
+  fill: var(--link-active-color);
+}
 
 .mailmargin {
   margin-right: 30px;
 }
-
-
-
 
 /* Ноги ----------------------*/
 
@@ -233,7 +238,8 @@ header .container {
   align-items: center;
 }
 
-.footer-soc-link:hover, .footer-soc-link:focus {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
   background-color: var(--link-active-color);
 }
 
@@ -251,7 +257,8 @@ header .container {
   color: var(--adress-footer-color);
   margin-bottom: 12px;
 }
-.Adress:hover, .Adress:focus {
+.Adress:hover,
+.Adress:focus {
   color: var(--link-active-color);
 }
 
@@ -264,7 +271,7 @@ header .container {
   letter-spacing: 0.03em;
   color: var(--footer-MailTel-color);
 }
-.MiT:hover {
+.MiT:hover, .MiT:focus {
   color: var(--link-active-color);
 }
 .teldown {
@@ -482,10 +489,12 @@ header .container {
   align-items: center;
 }
 
-.barbers-soc-link:hover, .barbers-soc-link:focus {
+.barbers-soc-link:hover,
+.barbers-soc-link:focus {
   background-color: var(--link-active-color);
 }
-.barbers-soc-link:hover .barbers-soc-icon {
+.barbers-soc-link:hover .barbers-soc-icon,
+.barbers-soc-link:focus .barbers-soc-icon {
   background-color: var(--link-active-color);
   fill: #fff;
 }
@@ -513,7 +522,8 @@ header .container {
   width: 170px;
   height: 92px;
 }
-.SVGclients:hover, .SVGclients:focus {
+.SVGclients:hover,
+.SVGclients:focus {
   border: 1px solid rgba(33, 150, 243, 1);
 }
 
@@ -529,7 +539,8 @@ header .container {
 .Clients-svg {
   fill: #afb1b8;
 }
-.Clients:hover .Clients-svg {
+.Clients:hover .Clients-svg,
+.Clients:focus .Clients-svg {
   fill: rgba(33, 150, 243, 1);
 }
 
