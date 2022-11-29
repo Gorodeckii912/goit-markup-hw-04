@@ -113,7 +113,7 @@ header .container {
   letter-spacing: 0.02em;
   color: var(--head-nav-color);
 }
-.TextNAV:hover {
+.TextNAV:hover, .TextNAV:focus {
   color: var(--link-active-color);
 }
 .studioP {
@@ -135,7 +135,7 @@ header .container {
   height: 16px;
   left: 653px;
   top: 32px;
-  margin-right: 318px;
+  margin-right: 303px;
 }
 
 .mit {
@@ -147,37 +147,19 @@ header .container {
   letter-spacing: 0.02em;
   color: var(--head-mailtel-color);
 }
-.mit:hover {
+.mit:hover, .mit:focus {
   color: var(--link-active-color);
 }
-/* Я НЕПОНИМАЮ ПОЧЕМУ ЭТО НЕ РАБОТАЕТ!!! */
-.mit:hover::before{ border-color: #2196F3;
-color:#2196F3 ;
-fill:#2196F3; }
+.special-svg { fill:var(--head-mailtel-color); margin-right: 10px;cursor: pointer;}
+.special-svg:hover, .special-svg:focus {fill:var(--link-active-color) }
 
 .mailmargin {
   margin-right: 30px;
 }
-.mail::before {
-  content: "";
-  display: inline-flex;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url("../svg/envelope.svg");
-  background-size: contain;
-  color: #2196f3;
-}
 
-.tel::before {
-  content: "";
-  display: inline-flex;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url("../svg/smartphone.svg");
-  background-size: contain;
-}
+
+
+
 /* Ноги ----------------------*/
 
 .foot {
@@ -251,7 +233,7 @@ fill:#2196F3; }
   align-items: center;
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover, .footer-soc-link:focus {
   background-color: var(--link-active-color);
 }
 
@@ -269,7 +251,7 @@ fill:#2196F3; }
   color: var(--adress-footer-color);
   margin-bottom: 12px;
 }
-.Adress:hover {
+.Adress:hover, .Adress:focus {
   color: var(--link-active-color);
 }
 
@@ -500,7 +482,7 @@ fill:#2196F3; }
   align-items: center;
 }
 
-.barbers-soc-link:hover {
+.barbers-soc-link:hover, .barbers-soc-link:focus {
   background-color: var(--link-active-color);
 }
 .barbers-soc-link:hover .barbers-soc-icon {
@@ -531,7 +513,7 @@ fill:#2196F3; }
   width: 170px;
   height: 92px;
 }
-.SVGclients:hover {
+.SVGclients:hover, .SVGclients:focus {
   border: 1px solid rgba(33, 150, 243, 1);
 }
 
