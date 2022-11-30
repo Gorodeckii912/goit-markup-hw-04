@@ -155,12 +155,15 @@ header .container {
   fill: currentColor;
   margin-right: 10px;
   cursor: pointer;
+  
 }
-.special-svg:hover,
+.special-svg:hover
+ {
+  fill:var(--link-active-color);
+}
 .special-svg:focus {
-  fill: var(--link-active-color);
+  fill:var(--link-active-color);
 }
-
 .mailmargin {
   margin-right: 30px;
 }
